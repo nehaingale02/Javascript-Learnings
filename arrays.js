@@ -31,16 +31,16 @@ console.log(`average of an array is : ${avg}`);
 
 /* for a given array of price of 5 items,apply 10% off on each item and change array items 
 and store this off values*/
-// let items= [250,645,300,900,50];
-// let i = 0;
-// for (let val of items){
-//     let offer = val / 10;
-//     items[i] = items[i] - offer;
+let items= [250,645,300,900,50];
+let i = 0;
+for (let val of items){
+    let offer = val / 10;
+    items[i] = items[i] - offer;
   
-//     console.log(`array of items after applying offer is: ${items[i]}`);
-//     i++;
-// }
-// console.log(items);
+    console.log(`array of items after applying offer is: ${items[i]}`);
+    i++;
+}
+console.log(items);
 
 //2nd method
 let items1= [250,645,300,900,50];
@@ -90,3 +90,14 @@ console.log(festival.slice(1,2));
 var numb= [1,2,3,4,5,6,7,8];
 numb.splice(0,3,20,30,40);
 console.log(numb);
+//In splice if only one index is passed it deletes elements frm that index 
+//& returns the array after deletion.
+var numb= [1,2,3,4,5,6,7,8];
+numb.splice(3);           // ---> this returns orignal array -->[1,2,3] ,deletes frm index 3--> [4,5,6,7,8]
+console.log(numb);
+
+var companies = ["bloomberg","microsoft","uber","google","IBM","netflix"];
+// companies.shift();
+// companies.splice(2,1,"ola");
+companies.push("Amazon");
+console.log(companies);
