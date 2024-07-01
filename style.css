@@ -1,0 +1,27 @@
+h1{
+    color: purple;
+    background-color: yellow;
+}
+body{
+    background-color:darkseagreen;
+
+}
+.name{
+background-color: brown;
+color: green;
+}
+#box{
+    background-color: green;
+    color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 40px;
+    border:  2px solid bisque;
+    margin-top: 20px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.newClass{
+    background-color: rgb(213, 118, 22);
+}
